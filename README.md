@@ -1,4 +1,4 @@
-# angular-seed — the seed for AngularJS apps
+# angular-seed with bootstraps — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
 You can use it to quickly bootstrap your angular webapp projects and dev environment for these
@@ -11,6 +11,8 @@ our (or yours) webserver and you are ready to develop and test your application.
 The seed app doesn't do much, just shows how to wire two controllers and views together. You can
 check it out by opening app/index.html in your browser (might not work file `file://` scheme in
 certain browsers, see note below).
+
+I add bootstrap css for the seed project. But **ONLY** css, no javascript for bootstrap, no less.
 
 _Note: While angular is client-side-only technology and it's possible to create angular webapps that
 don't require a backend server at all, we recommend hosting the project files using a local
@@ -94,6 +96,7 @@ fetch the changes and merge them into your project with git.
     app/                --> all of the files to be used in production
       css/              --> css files
         app.css         --> default stylesheet
+        bootstrap*      --> bootstraps
       img/              --> image files
       index.html        --> app layout file (the main html template file of the app)
       index-async.html  --> just like index.html, but loads js files asynchronously
@@ -110,8 +113,6 @@ fetch the changes and merge them into your project with git.
           angular-*.js      --> angular add-on modules
           version.txt       --> version number
       partials/             --> angular view partials (partial html templates)
-        partial1.html
-        partial2.html
 
     config/testacular.conf.js        --> config file for running unit tests with Testacular
     config/testacular-e2e.conf.js    --> config file for running e2e tests with Testacular
